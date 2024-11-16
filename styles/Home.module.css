@@ -60,7 +60,17 @@
   -webkit-text-fill-color: transparent;
   font-size: 12px;
 }
-
+.gradientText5 {
+  background: -webkit-linear-gradient(#f98ffd8f, #b7b6b8) ;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 14px;
+  border: 1px solid #5351514f;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 50px;
+}
 .title a:hover,
 .title a:focus,
 .title a:active {
