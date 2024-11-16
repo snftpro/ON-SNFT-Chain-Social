@@ -32,19 +32,33 @@
 }
 
 .gradientText2 {
-  background: -webkit-linear-gradient(#bfa3da, #743f93);
+  background: -webkit-linear-gradient(#80b0e7, #b7b6b8) ;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 12px;
 }
 
 .gradientText3 {
-  background: -webkit-linear-gradient(#c35ab1, #e9a8d9);
+  background: -webkit-linear-gradient(#f5bbdd, #a7a4a693);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 20px;
   margin-bottom: 20px;
+  font-size: 14px;
+  text-align: left;
+  border: 1px solid #5351514f;
+  padding: 0.5rem 1rem 2.5rem 1rem;
+  width: 600px;
+  border-radius: 10px;
+
+}
+.gradientText4 {
+  background: -webkit-linear-gradient(#8ff6fd, #b7b6b8) ;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
 }
 
 .title a:hover,

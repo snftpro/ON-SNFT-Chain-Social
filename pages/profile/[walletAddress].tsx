@@ -63,7 +63,7 @@ export default function AcountFeed() {
         style={{ marginBottom: "250px", marginTop: "20px" }}
         >
          
-            <h1 style={{ fontSize: "14px", color: "gray" }}>Address: {walletAddress} </h1>
+            <h1 className={styles.gradientText2}>Address: {walletAddress} </h1>
             <br/>
             {!isUserEventsLoading && userEvents && ( 
                 userEvents.slice(0, 20).map((event, index) => (
