@@ -65,8 +65,8 @@ export default function AcountFeed() {
                 className={styles.updateButton}
             >Back</button>
             
-            <h1 style={{ fontSize: "0.75rem" }}>{walletAddress}</h1>
-            <h3>Your Posts</h3>
+            <h1 style={{ fontSize: "1rem" }}>Account: {walletAddress} </h1>
+            <br/>
             {!isUserEventsLoading && userEvents && (
                 userEvents.slice(0, 20).map((event, index) => (
                     <EventCard
