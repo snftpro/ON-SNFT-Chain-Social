@@ -59,15 +59,13 @@ export default function AcountFeed() {
     return (
         <main className={styles.main}>
 
-        <div className={styles.statusContainer2}>
-            <button
-                onClick={() => router.push("/")}
-                className={styles.updateButton}
-            >Back</button>
-            
-            <h1 style={{ fontSize: "1rem" }}>Account: {walletAddress} </h1>
+        <div 
+        style={{ marginBottom: "250px", marginTop: "20px" }}
+        >
+         
+            <h1 className={styles.gradientText5}>Address: {walletAddress} </h1>
             <br/>
-            {!isUserEventsLoading && userEvents && (
+            {!isUserEventsLoading && userEvents && ( 
                 userEvents.slice(0, 20).map((event, index) => (
                     <EventCard
                         key={index}
