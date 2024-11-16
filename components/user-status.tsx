@@ -81,23 +81,23 @@ export default function UserStatus() {
             {!isMyStatusLoading && myStatus && (
                 <div>
                     <Link href={`/`} style={{ color: "white"}}>
-                    <p className={styles.connectedAddress2}>Home</p>
+                    <p className={styles.muneButton}>Home</p>
                 </Link>
                 </div>
                 
             )}
             <button
-                className={styles.updateButton}
+               className={styles.gradientText}
                 onClick={() => setIsStatusModalOpen(true)}
             >New Post</button>
               
               <Link href={`/profile/${address}`} style={{ color: "white"}}>
-                    <p className={styles.connectedAddress2}>Profile</p>
+                    <p className={styles.muneButton}>Profile</p>
                 </Link>
               
                 
              <button
-                    className={styles.updateButton}
+                    className={styles.gradientText}
                     onClick={() => disconnect()}
                 >Logout</button>
                

@@ -12,7 +12,7 @@ export default function Footer() {
     <><div className={styles.footer}>
 
        <div className={styles.footerMiddle2}>
-        <h3>SNFT © 2024 - all Rights Reserved</h3>
+        <h3 className={styles.gradientText}>SNFT © 2024 - all Rights Reserved</h3>
       </div>
 
 <div className={styles.footerMiddle}>
