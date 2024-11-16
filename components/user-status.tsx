@@ -89,22 +89,20 @@ export default function UserStatus() {
             
             {!isMyStatusLoading && myStatus && (
                 <div>
-                    <p className={styles.statusText}>{myStatus}</p>
                 </div>
             )}
             <button
                 className={styles.updateButton}
                 onClick={() => setIsStatusModalOpen(true)}
-            >Post</button>
+            >New Post</button>
 
             {isStatusModalOpen && (
                 <div className={styles.statusModalContainer}>
                     <div className={styles.statusModal}>
                         <div className={styles.statusModalHeader}>
-                            <p>New Post:</p>
-                            <button  className={styles.logoutButton}
+                            <button  style={{ color: "white", borderRadius: "50px", padding: "3px 7px", fontWeight: "900",  fontSize: "16px", border: "1px solid gray" }}
                                 onClick={() => setIsStatusModalOpen(false)}
-                            >Close</button>
+                            >X</button>
                         </div>
                         <textarea
                             value={newStatus}
