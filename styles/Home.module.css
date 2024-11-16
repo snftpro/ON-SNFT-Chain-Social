@@ -24,10 +24,11 @@
 }
 
 .gradientText1 {
-  background: -webkit-linear-gradient(#a79af9, #7aa8d2);
+  background: -webkit-linear-gradient(#b4b3b4, #6d6d6e, #dad8da);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 20px;
 }
 
 .gradientText2 {
@@ -252,7 +253,7 @@
   flex-direction: row;
   align-items: left;
   width: 100%;
-  margin-left: 30px;
+  margin-left: 120px;
   justify-content: left;
   justify-items: left;
   background-color: #ffffff00;
