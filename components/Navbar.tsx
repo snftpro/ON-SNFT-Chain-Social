@@ -2,29 +2,25 @@ import { ConnectWallet } from "@thirdweb-dev/react";
 import Link from 'next/link';
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import UserStatus from "../components/user-status";
+
 export default function Navbar() {
     return (
         
-        <div>
+        <div className={styles.Navbar}>
         <div className={styles.NavbarLeft}>
-            
-            <Link href="https://snft.pro/" className={`${styles.homeLink} ${styles.footerRight}`} rel="noreferrer">
-    <Image
-       src="/images/h.png"
-       width={35}
-       height={35}
-      alt="" 
-    />
-  </Link>
-
-  </div>
+<h1 className={styles.gradientText}
+>ON SNFT Chain Social</h1>
+      </div>
 
   <div className={styles.NavbarMiddle}>
+  </div>
+      
+      <div className={styles.NavbarRight}>
+  <UserStatus />
+  </div>
 
-  <h1>ON SNFT Chain Social</h1>
-
-
-        </div>
+ 
         </div>
     )
 }

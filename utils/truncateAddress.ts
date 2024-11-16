@@ -3,5 +3,5 @@ export function truncateAddress(address: string) {
         return "";
     }
 
-    return address.slice(0, 4) + "..." + address.slice(-4);
+    return address.slice(0, 8) + "..." + address.slice(-8);
 };

@@ -52,8 +52,9 @@ export default function UserStatus() {
             backgroundColor: "#ffffff00",
             border: "1px solid #a6a8a7",
             borderRadius: "16px",
-            padding: "10px 30px",  
+            padding: "15px 30px",  
             fontWeight: "700",
+            marginTop: "20px",
             marginBottom: "30px",
             fontSize: "14px",
             fontStyle: "italic",
@@ -76,25 +77,33 @@ export default function UserStatus() {
     }
 
     return (
-        <div className={styles.userContainer}>
-            <div className={styles.statusHeader}>
-                <Link href={`/account/${address}`} style={{ color: "white"}}>
-                    <p className={styles.connectedAddress}>{truncateAddress(address!)}</p>
-                </Link>
-                <button
-                    className={styles.logoutButton}
-                    onClick={() => disconnect()}
-                >Logout</button>
-            </div>
-            
+        <div className={styles.main}>
             {!isMyStatusLoading && myStatus && (
                 <div>
+                    <Link href={`/`} style={{ color: "white"}}>
+                    <p className={styles.connectedAddress2}>Home</p>
+                </Link>
                 </div>
+                
             )}
             <button
                 className={styles.updateButton}
                 onClick={() => setIsStatusModalOpen(true)}
             >New Post</button>
+              
+              <Link href={`/profile/${address}`} style={{ color: "white"}}>
+                    <p className={styles.connectedAddress2}>Profile</p>
+                </Link>
+              
+                
+             <button
+                    className={styles.updateButton}
+                    onClick={() => disconnect()}
+                >Logout</button>
+               
+              
+            
+          
 
             {isStatusModalOpen && (
                 <div className={styles.statusModalContainer}>

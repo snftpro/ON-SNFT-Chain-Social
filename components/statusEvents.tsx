@@ -46,7 +46,7 @@ export default function StatusEvents() {
     };
 
     return (
-        <div >
+        <div  className={styles.statusEvents}>
 
             {!isStatusEventsLoading && statusEvents && (
                 statusEvents.slice(0, 30).map((event, index) => (

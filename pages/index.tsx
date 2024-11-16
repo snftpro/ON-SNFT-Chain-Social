@@ -1,7 +1,6 @@
 import { useAddress } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
 import { NextPage } from "next";
-import UserStatus from "../components/user-status";
 import StatusEvents from "../components/statusEvents";
 import { useEffect, useState } from "react";
 import Lottie from "lottie-react";
@@ -35,21 +34,10 @@ const Home: NextPage = () => {
   };
 
   return (
-    <main className={styles.main}>
-
-        <div className={styles.statusContainer2}>
-        <div >
-        <UserStatus />
-        </div>
-        <div >
+    <div  className={styles.statusContainer2}>
         <StatusEvents />
         </div>
-      
-       
-      
-        </div>
         
-     </main>
   );
 };
 

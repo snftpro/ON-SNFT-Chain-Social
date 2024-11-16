@@ -9,9 +9,13 @@ export default function Footer() {
 
 
 
-    <><div className={styles.footerMiddle}>
+    <><div className={styles.footer}>
 
+       <div className={styles.footerMiddle2}>
+        <h3>SNFT © 2024 - all Rights Reserved</h3>
+      </div>
 
+<div className={styles.footerMiddle}>
 
       <Link href="https://www.linkedin.com/company/snft/" className={`${styles.homeLink} ${styles.footerRight}`} target="_blank" rel="noreferrer">
         <Image
@@ -36,9 +40,10 @@ export default function Footer() {
           alt="" />
       </Link>
 
-    </div><div className={styles.footerMiddle2}>
-        <h3>SNFT © 2024 - all Rights Reserved</h3>
-      </div></>
+    </div>
+   
+      </div>
+      </>
 
        
         

@@ -15,7 +15,7 @@ export default function EventCard(props: EventCardProps) {
     return (
         <div className={styles.eventCard}>
             <div className={styles.eventHeader}>
-                <Link href={`/account/${props.walletAddress}`} style={{ color: "white" }}>
+                <Link href={`/profile/${props.walletAddress}`} style={{ color: "white" }}>
                     <p className={styles.connectedAddress}>{truncateAddress(props.walletAddress)}</p>
                 </Link>
                 <p style={{ fontSize: "0.75rem" }}>{date.toLocaleString()}</p>
