@@ -9,8 +9,11 @@ export default function Navbar() {
         
         <div className={styles.Navbar}>
         <div className={styles.NavbarLeft}>
-<h1 className={styles.gradientText}
+            <Link href="/" className={styles.homeLink}>
+            <h1 className={styles.gradientText}
 >ON SNFT Chain Social</h1>
+          </Link>
+
       </div>
 
   <div className={styles.NavbarMiddle}>

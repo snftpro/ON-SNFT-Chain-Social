@@ -14,13 +14,14 @@ export default function EventCard(props: EventCardProps) {
 
     return (
         <div className={styles.eventCard}>
+            <p 
+            style={{ fontSize: "12px", border: "1px solid #fffff010", borderRadius: "5px", padding: "20px 20px 50px 20px ", textAlign: "left", width: "600px" }}>{props.newStatus}</p>
             <div className={styles.eventHeader}>
                 <Link href={`/profile/${props.walletAddress}`} style={{ color: "white" }}>
                     <p className={styles.connectedAddress}>{truncateAddress(props.walletAddress)}</p>
                 </Link>
-                <p style={{ fontSize: "0.75rem" }}>{date.toLocaleString()}</p>
+                <p style={{ fontSize: "0.5rem" }}>{date.toLocaleString()}</p>
             </div>
-            <p className={styles.eventHeader2}>{props.newStatus}</p>
         </div>
     );
 };

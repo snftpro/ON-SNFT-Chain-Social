@@ -5,6 +5,8 @@ import StatusEvents from "../components/statusEvents";
 import { useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import loadingLottie from "../public/loadingLottie.json";
+import Image from "next/image";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   const address = useAddress();

@@ -113,7 +113,8 @@ export default function UserStatus() {
                                 onClick={() => setIsStatusModalOpen(false)}
                             >X</button>
                         </div>
-                        <textarea
+                        <textarea 
+                            className={styles.statusModaltextarea }
                             value={newStatus}
                             onChange={(e) => {
                                 setNewStatus(e.target.value)

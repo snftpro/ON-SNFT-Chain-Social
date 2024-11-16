@@ -46,7 +46,7 @@ export default function StatusEvents() {
     };
 
     return (
-        <div  className={styles.statusEvents}>
+        <div  style={{ marginBottom: "250px" }}>
 
             {!isStatusEventsLoading && statusEvents && (
                 statusEvents.slice(0, 30).map((event, index) => (
