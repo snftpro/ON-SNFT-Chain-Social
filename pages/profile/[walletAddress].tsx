@@ -6,6 +6,8 @@ import EventCard from '../../components/eventCard';
 import Lottie from 'lottie-react';
 import loadingLottie from '../../public/loadingLottie.json';
 import { useEffect, useState } from 'react';
+import Image from "next/image";
+import Link from 'next/link';
 
 export default function AcountFeed() {
     const router = useRouter();
@@ -59,11 +61,22 @@ export default function AcountFeed() {
     return (
         <main className={styles.main}>
 
-        <div 
-        style={{ marginBottom: "250px", marginTop: "20px" }}
-        >
-         
-            <h1 className={styles.gradientText5}>Address: {walletAddress} </h1>
+        <div style={{ marginBottom: "250px", marginTop: "20px" }}>
+            <Link style={{ marginBottom: "30px", display: "flex", flexDirection: "row", 
+            alignItems: "center", gap: "30px", border: "1px solid #5351514f", borderRadius: "20px", justifyContent: "center" }}
+            href={`/profile/${walletAddress}`}>
+        <Image
+            src="/images/av.png"
+            alt=""
+            width={40}
+            height={40}
+            style={{ borderRadius: "50%" }}
+            
+            ></Image>
+            <h4 style={{ color: "gray" }}>{walletAddress} </h4>
+
+            </Link>
+            
             <br/>
             {!isUserEventsLoading && userEvents && ( 
                 userEvents.slice(0, 20).map((event, index) => (
