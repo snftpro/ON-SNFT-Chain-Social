@@ -14,7 +14,7 @@ export default function EventCard(props: EventCardProps) {
 
     return (
         <div className={styles.eventCard}>
-            <p className={styles.gradientText3}>{props.newStatus}</p>
+            <p style={{ width: "600px", textAlign: "left", padding: "20px 20px 50px 20px", borderRadius: "10px", border: "1px solid #5351514f" }}>{props.newStatus}</p>
             <div className={styles.eventHeader}>
                 <Link href={`/profile/${props.walletAddress}`} style={{ color: "white" }}>
                     <p className={styles.gradientText2}>{truncateAddress(props.walletAddress)}</p>
