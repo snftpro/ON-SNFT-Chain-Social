@@ -120,7 +120,7 @@ export default function UserStatus() {
                                 setNewStatus(e.target.value)
                                 setCharacterCount(e.target.value.length)
                             }}
-                            placeholder="What is happening!"
+                            placeholder="Onc-hain message, cannot be deleted!"
                         />
                         <div className={styles.characterCountContainer}>
                             <p className={characterDecoration}>{characterCount}/140</p>
